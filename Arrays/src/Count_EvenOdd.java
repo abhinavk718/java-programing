@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Count_EvenOdd
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENter how many elements you have to store.");
+		int n=sc.nextInt();
+		int ar[]=new int[n];
+		System.out.println("Plz enter "+n+" elements");
+		for (int i = 0; i < ar.length; i++) 
+		{
+			ar[i]=sc.nextInt();
+		}
+		System.out.println("Entered elements are:");
+		for (int i = 0; i < ar.length; i++) 
+		{
+			System.out.print(ar[i]+" ");
+		}
+		System.out.println();
+		int ec=0,oc=0;
+		for (int i = 0; i < ar.length; i++) 
+		{
+			if(ar[i]%2==0)
+				ec++;
+			else
+				oc++;
+		}
+		System.out.println("Even numbers are : "+ec);
+		System.out.println("Odd numbers are : "+oc);
+		sc.close();
+	}
+}

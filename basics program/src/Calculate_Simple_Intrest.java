@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Calculate_Simple_Intrest
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Plz enter the principal ammount. ");
+		double p=sc.nextDouble();
+		System.out.println("Plz enter rate. ");
+		double r=sc.nextDouble();
+		System.out.println("Plz enter the time. ");
+		double t=sc.nextDouble();
+		double si=p*r*t/100;
+		System.out.println("Simple intrest is "+si);
+		double pi=p+si;
+		System.out.println("Principle ammount with intrest is "+pi);
+		sc.close();
+	}
+}

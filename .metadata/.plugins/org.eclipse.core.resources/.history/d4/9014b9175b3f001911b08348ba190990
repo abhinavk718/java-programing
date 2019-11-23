@@ -1,0 +1,28 @@
+package exception_handling;
+import java.util.*;
+public class Calculator 
+{
+	void calculate()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the first number.");
+		int fn=sc.nextInt();
+		System.out.println("Enter the second number.");
+		int sn=sc.nextInt();
+		Math m=new Math();
+		try 
+		{
+			m.divide(fn,sn);
+		}
+		catch(ArithmeticException)
+		{
+			System.out.println("Enter proper input.");
+		}
+		sc.close();
+	}
+	public static void main(String[] args) 
+	{
+		Calculator c=new Calculator();
+		c.calculate();
+	}
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Merge_Sorted_Array 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("How many elements dou have to store in first array.");
+		int n=sc.nextInt();
+		int ar[]=new int[n];
+		System.out.println("Plz enter "+n+" elements");
+		for (int i = 0; i < ar.length; i++) 
+		{
+			ar[i]=sc.nextInt();
+		}
+		System.out.println("How many elements dou have to store in second array.");
+		int p=sc.nextInt();
+		int ar1[]=new int[n];
+		System.out.println("Plz enter "+p+" elements");
+		for (int i = 0; i < ar1.length; i++) 
+		{
+			ar1[i]=sc.nextInt();
+		}
+	}
+}

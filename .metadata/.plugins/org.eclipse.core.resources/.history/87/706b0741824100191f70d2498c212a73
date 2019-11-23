@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Display_Number_OfDays
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);	
+		System.out.println("Plz enter month number.");
+		int n=sc.nextInt();
+		if (n<1||n>12)
+		{
+			System.out.println("Invalid month number.");
+			
+		}
+		
+	}
+
+}

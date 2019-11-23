@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Find_MiddleNumber
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter three number");//30 40 50
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		sc.close();
+		if(b<c&&a>c||b>c&&a<c) 
+		{
+			System.out.println(c+" is the middle number");
+		}
+		else if (a<b&&c>b)
+		{
+			System.out.println(b+" is the middle number");
+		}
+		else
+			System.out.println(a+" is the middle number");
+	}
+}

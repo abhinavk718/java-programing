@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Area_PerimeterSquare 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter side of square.");
+		double l=sc.nextDouble();
+		double area=l*l;
+		double perimeter=2*l;
+		System.out.println("Area of square is "+area);
+		System.out.println("perimeter of square is "+perimeter);
+		sc.close();
+	}
+}

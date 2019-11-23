@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Display_Result 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Plz enter five subject marks.");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		int d=sc.nextInt();
+		int e=sc.nextInt();
+		float per=a+b+c+d+e/5;
+		if(a<35||b<35||c<35||d<35||e<35)
+			System.out.println("you are fail");
+		else
+		{
+			if(per>=75)
+				System.out.println(" First division with distinction");
+			else if(per>=60)
+				System.out.println("First division");
+			else if(per>=45)
+				System.out.println("Second division");
+			else
+				System.out.println("PASS");
+		}
+	}
+}

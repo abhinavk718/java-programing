@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Cheek_Even_Odd
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number.");
+		int n=sc.nextInt();
+		sc.close();
+		boolean res=isEven(n);
+		if(res)
+			System.out.println(n+" is even number.");
+		else
+			System.out.println(n+" is odd number.");	
+	}
+	public static boolean isEven(int x)
+	{
+		if(x/2*2==x)
+			return true;
+		return false;
+	}
+}

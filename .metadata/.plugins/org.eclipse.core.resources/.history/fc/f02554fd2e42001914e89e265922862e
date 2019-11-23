@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Check_ArmstrongNumber
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int n=sc.nextInt();
+		int res=countDigit(n);
+		System.out.println(res);
+	}/*
+	public static boolean isArmstrong(int x)
+	{
+		return true;
+		
+	}*/
+	public static int countDigit(int x)
+	{
+		int count=0;
+		while(x>0)
+		{
+			x=x%10;
+			count++;
+		}
+		return count;
+	}
+}

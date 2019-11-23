@@ -1,0 +1,7 @@
+
+public class CountEvenDivisor {
+	public static void main(String[] args) {
+		System.out.println("gfuyhewofiuhcb");
+
+	}
+}

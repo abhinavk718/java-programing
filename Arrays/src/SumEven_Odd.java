@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class SumEven_Odd 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the size of an array.");
+		int n=sc.nextInt();
+		System.out.println("PLz enter "+n+"elements.");
+		int []ar=new int[n];
+		for (int i = 0; i <n; i++)
+		{
+			ar[i]=sc.nextInt();
+		}
+		System.out.println("Entered elements are :");
+		for (int i = 0; i <n; i++) 
+		{
+			System.out.print(ar[i]+" ");
+		}
+		System.out.println();
+		int sEven=0,sOdd=0;
+		for (int i = 0; i <n; i++)
+		{
+		   if(ar[i]%2==0)
+			   sEven=sEven+ar[i];
+		   else
+			   sOdd=sOdd+ar[i];
+		}
+		System.out.println("Sum of even numbers are :"+sEven);
+		System.out.println("Sum of odd numbers are :"+sOdd);
+		sc.close();
+	}
+
+}

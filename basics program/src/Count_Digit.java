@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Count_Digit 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number.");
+		long t=sc.nextLong();
+		long count=0,n=t;
+		while(t>0)
+		{
+			t=t/10;
+			count++;
+		}
+		System.out.println("number of digits in "+n+" is "+count);
+		sc.close();
+	}
+}

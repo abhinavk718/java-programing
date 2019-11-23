@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Display_Number_OfDays
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);	
+		System.out.println("Plz enter month number.");
+		int n=sc.nextInt();
+		if (n<1||n>12)
+		{
+			System.out.println("Invalid month number.");
+		}
+			else if(n==1||n==3||n==5||n==7||n==8||n==10||n==12)
+				System.out.println("Has 31 days.");
+			else if(n==2)
+				System.out.println("has 28/29 days.");
+			else
+				System.out.println("Has 30 days."):		
+		}
+	}
+}

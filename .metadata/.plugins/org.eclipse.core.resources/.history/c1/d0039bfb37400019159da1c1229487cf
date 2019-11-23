@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Count_Each_Character 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string.");
+		String st=sc.nextLine();
+		int uc=0,lc=0,dc=0,sch=0,vc=0,cc=0;
+		for (int i = 0; i <st.length(); i++)
+		{
+			char ch=st.charAt(i);
+			if(ch>=97&&ch<=122)
+				lc++;
+			else
+				uc++;
+		}
+		System.out.println("Uppercase character is : "+uc);
+		System.out.println("Lowercase character is : "+lc);
+	}
+}

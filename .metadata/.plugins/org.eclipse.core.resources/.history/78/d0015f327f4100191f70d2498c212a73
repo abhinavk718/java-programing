@@ -1,0 +1,11 @@
+import java.util.Random;
+public class Random_SpecialTwoDigitNumner 
+{
+	public static void main(String[] args)
+	{
+		Random rd=new Random();
+		int rn=rd.nextInt(100);
+		System.out.println("Random generated number is :"+rn);
+	}
+
+}

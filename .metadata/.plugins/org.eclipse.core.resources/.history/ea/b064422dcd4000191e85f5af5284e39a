@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Last_TwoDigit
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter the number.");
+	    long num=sc.nextLong();
+	    sc.close();
+	    num=num%100;
+	    if(num>99||num<-99)
+	    System.out.println(num);
+    }
+}

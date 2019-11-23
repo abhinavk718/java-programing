@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Sum_PlaindromeNumber
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter how many elements you have to store in first array.");
+		int n=sc.nextInt();
+		boolean res=isPlaindrome(n);
+		if (res) 
+			System.out.println("plaindrome");
+		else
+			System.out.println("not");
+	}
+	static boolean isPlaindrome(int x)
+	{
+		int t=x,rev=0;
+		while(x>0)
+		{
+			int r=x%10;
+			rev=rev*10+r;
+			x=x/10;
+		}
+		if(t==rev)
+			return true;
+		else 
+			return false;
+	}
+}

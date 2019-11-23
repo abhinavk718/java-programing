@@ -1,0 +1,14 @@
+/* program to print frequency of each character in the string?? */
+import java.util.Scanner;
+public class Cheek_Panagram 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the sentence.");
+		String str=sc.nextLine();
+		
+		
+	}
+
+}

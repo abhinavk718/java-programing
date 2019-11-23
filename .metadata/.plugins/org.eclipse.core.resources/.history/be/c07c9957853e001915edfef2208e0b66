@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Deletion_ArrayElement
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter how many elements you have to store.");
+		int n=sc.nextInt();
+		int ar[]=new int[n];
+		System.out.println("Plz enter "+n+"elements.");
+		for (int i = 0; i < ar.length; i++)
+		{
+			ar[i]=sc.nextInt();
+		}
+		System.out.println("Enter the index at which you want to delete element.");
+		int p=sc.nextInt();
+	}
+
+}
